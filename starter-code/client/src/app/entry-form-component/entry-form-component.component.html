@@ -1,0 +1,13 @@
+<p>
+  entry-form-component works!
+</p>
+
+<form (ngSubmit)="addJournal(myJournal)" #myJournal="ngForm">
+
+  <input type="text" name="title" placeholder="Name of the title" [(ngModel)]="title" required>
+
+ <input type="text" name="content" placeholder="Your message" [(ngModel)]="content" required>
+ <button type="submit">Add Journal</button>
+
+</form>
+
